@@ -49,7 +49,7 @@ public class UserServiceTest {
     }
 
     @Test
-    void whenCorrectUserIsAddedThenAddTeamIsCalledFromRepo() {
+    void whenCorrectUserIsAddedThenAddUserIsCalledFromRepo() {
         when(userRepository.addAllUsers()).thenReturn(List.of());
         when(userRepository.addUser(any())).thenReturn(null);
         userService.createNewUser("login", "password");
@@ -60,6 +60,6 @@ public class UserServiceTest {
     void whenExistUserIsPassedThenServiceThrowsException() {
         when(userRepository.addAllUsers()).thenReturn(List.of(new User("login", "password")));
         assertThatThrownBy(() -> userService.createNewUser("login", "password"))
-                .isInstanceOf(IllegalArgumentException.class);
+                .isInstanceOf(UserNonUniqueException.class);
     }
 }

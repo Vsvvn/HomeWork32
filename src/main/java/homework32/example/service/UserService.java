@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 
 public class UserService {
 
-    private final List<User> allUsers = new ArrayList<>();
     private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
@@ -38,17 +37,17 @@ public class UserService {
     }
 
     public void createNewUser(String login, String password) {
-        User user = new User(login, password);
         if (login == null || login.isEmpty() || login.isBlank()) {
             throw new IllegalArgumentException("Введены неверные значения логина");
         }
         if (password == null || password.isEmpty() || password.isBlank()) {
             throw new IllegalArgumentException("Введены неверные значения пароля");
         }
+        User user = new User(login, password);
         boolean userExist = this.userRepository
                 .addAllUsers()
                 .stream()
-                .allMatch(u -> u.equals(user));
+                .anyMatch(u -> u.equals(user));
 //        boolean userExist = true;
 //        for (User u : this.userRepository
 //                .addAllUsers()) {

@@ -6,7 +6,7 @@ import java.util.*;
 
 public class UserRepository {
 
-    List<User> users = new ArrayList<User>();
+    private final List<User> users = new ArrayList<User>();
 
     public User addUser(User user) {
         this.users.add(user);

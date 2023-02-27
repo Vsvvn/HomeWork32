@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc848a10-d9bb-41b9-8fb7-1d708a49e27e" name="Changes" comment="Первый коммит.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework32/example/exception/UserNonUniqueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework32/example/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework32/example/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework32/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/homework32/example/repository/UserRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/homework32/example/service/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="fc848a10-d9bb-41b9-8fb7-1d708a49e27e" name="Changes" comment="Сделано дз.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework32/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework32/example/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework32/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework32/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/homework32/example/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework32/example/repository/UserRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,47 +39,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/VSan/IdeaProjects/TESTING5demoMockApplication"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="homework32.example.service" />
       <recent name="homework32.example.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.whenExistingUserIsPassedThenServiceThrowsException">
-    <configuration name="UserServiceTest.createUserNotUnique" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.homework32.example in HomeWork32">
+    <configuration name="UserRepositoryTest.gettingListOfUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork32" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework32.example.service.*" />
+          <option name="PATTERN" value="homework32.example.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="homework32.example.service" />
-      <option name="MAIN_CLASS_NAME" value="homework32.example.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="createUserNotUnique" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.createUserNullLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork32" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework32.example.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="homework32.example.service" />
-      <option name="MAIN_CLASS_NAME" value="homework32.example.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="createUserNullLogin" />
+      <option name="PACKAGE_NAME" value="homework32.example.repository" />
+      <option name="MAIN_CLASS_NAME" value="homework32.example.repository.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="gettingListOfUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,22 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.whenExistingUserIsPassedThenServiceThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork32" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework32.example.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="homework32.example.service" />
-      <option name="MAIN_CLASS_NAME" value="homework32.example.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="whenExistingUserIsPassedThenServiceThrowsException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="homework32.example in HomeWork32" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeWork32" />
       <extension name="coverage">
@@ -135,13 +100,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="homework32.example.repository in HomeWork32" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HomeWork32" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework32.example.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="homework32.example.repository" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="homework32.example.service in HomeWork32" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HomeWork32" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework32.example.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="homework32.example.service" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest.whenExistingUserIsPassedThenServiceThrowsException" />
-        <item itemvalue="JUnit.UserServiceTest.whenExistUserIsPassedThenServiceThrowsException" />
         <item itemvalue="JUnit.homework32.example in HomeWork32" />
-        <item itemvalue="JUnit.UserServiceTest.createUserNotUnique" />
-        <item itemvalue="JUnit.UserServiceTest.createUserNullLogin" />
+        <item itemvalue="JUnit.UserServiceTest.whenExistUserIsPassedThenServiceThrowsException" />
+        <item itemvalue="JUnit.homework32.example.service in HomeWork32" />
+        <item itemvalue="JUnit.homework32.example.repository in HomeWork32" />
+        <item itemvalue="JUnit.UserRepositoryTest.gettingListOfUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +147,8 @@
       <option name="presentableId" value="Default" />
       <updated>1677335859321</updated>
       <workItem from="1677335861968" duration="23126000" />
-      <workItem from="1677427041172" duration="21255000" />
+      <workItem from="1677427041172" duration="22022000" />
+      <workItem from="1677535693577" duration="3469000" />
     </task>
     <task id="LOCAL-00001" summary="Первый коммит.">
       <created>1677336195086</created>
@@ -163,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677336195086</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Сделано дз.">
+      <created>1677465101572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677465101572</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Сделано дз.">
+      <created>1677465217573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677465217573</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +190,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Первый коммит." />
-    <option name="LAST_COMMIT_MESSAGE" value="Первый коммит." />
+    <MESSAGE value="Сделано дз." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделано дз." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HomeWork32$homework32_example_in_HomeWork32.ic" NAME="homework32.example in HomeWork32 Coverage Results" MODIFIED="1677464630916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

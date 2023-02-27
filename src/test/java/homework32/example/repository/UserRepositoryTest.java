@@ -37,22 +37,22 @@ public class UserRepositoryTest {
     @Test
     @DisplayName("When the initially filled list of the service returns those users who were added, then the test is correct")
     public void gettingListOfUsers() {
-        List<User> expected = userRepository.addAllUsers();
         userRepository.addUser(user1);
         userRepository.addUser(user2);
         userRepository.addUser(user3);
+        Collection<User> actual = userRepository.addAllUsers();
 
-        List<User> actual = new ArrayList<>();
-        actual.add(user1);
-        actual.add(user2);
-        actual.add(user3);
+        List<User> expected = new ArrayList<>();
+        expected.add(user1);
+        expected.add(user2);
+        expected.add(user3);
 
         assertEquals(expected, actual);
     }
 
     @Test
     @DisplayName("When we find a user by login, if there is such a user, then the test is correct")
-    void SearchUserByLoginIfUserExists() {
+    void searchUserByLoginIfUserExists() {
         userRepository.addUser(user1);
         Optional<User> user = userRepository.userSearchByLogin("login");
         assertTrue(user.isPresent());
@@ -60,7 +60,7 @@ public class UserRepositoryTest {
 
     @Test
     @DisplayName("When we find a user by login, if there is no such user, then the test is correct")
-    void SearchUserByLoginIfUserDoNotExists() {
+    void searchUserByLoginIfUserDoNotExists() {
         userRepository.addUser(user1);
         Optional<User> user = userRepository.userSearchByLogin("logn");
         assertFalse(user.isPresent());
@@ -68,7 +68,7 @@ public class UserRepositoryTest {
 
     @Test
     @DisplayName("When we find a user by login and password, if there is such a user, then the test is correct")
-    void SearchUserByLoginAndPasswordIfUserExists() {
+    void searchUserByLoginAndPasswordIfUserExists() {
         userRepository.addUser(user1);
         Optional<User> user = userRepository.userSearchByUserNameAndPassword("login","password");
         assertTrue(user.isPresent());
@@ -76,7 +76,7 @@ public class UserRepositoryTest {
 
     @Test
     @DisplayName("When searching for a user, the password matches the existing one and the login does not, then the test is correct")
-    void SearchUserByLoginAndPasswordButLoginDoNotExists() {
+    void searchUserByLoginAndPasswordButLoginDoNotExists() {
         userRepository.addUser(user1);
         Optional<User> user = userRepository.userSearchByUserNameAndPassword("logn","password");
         assertFalse(user.isPresent());
@@ -84,7 +84,7 @@ public class UserRepositoryTest {
 
     @Test
     @DisplayName("When searching for a user, the login matches the existing one and the password does not, then the test is correct")
-    void SearchUserByLoginAndPasswordButPasswordDoNotExists() {
+    void searchUserByLoginAndPasswordButPasswordDoNotExists() {
         userRepository.addUser(user1);
         Optional<User> user = userRepository.userSearchByUserNameAndPassword("login","pasword");
         assertFalse(user.isPresent());
